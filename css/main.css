@@ -1,0 +1,171 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: white;
+    text-decoration:none;
+}
+
+i{
+    margin-right: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#hero{
+    background-image: url(../images/negative-space-black-forest-dawn.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: 0px;
+}
+
+.huvudmeny{
+    height: 80px;
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.308);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    gap: 50px;
+    font-size: 20pt;
+}
+
+.mainwrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    color: white;
+    font-size: 18pt;
+    
+}
+
+.textwrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.needmargin{
+    margin-right: 40px;
+}
+
+h3{
+    margin-bottom: -2px;
+}
+
+#about{
+    width: 100%;
+    height: 140vh;
+    margin: 0 auto;
+}
+
+.meet{
+    height: 50px;
+    text-align: center;
+}
+
+.row{
+    height: 60vh;
+}
+
+.namewrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.namn{
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    margin-bottom: -80px;
+    font-weight:bold;
+    font-size: 11pt;
+}
+
+.pwrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+}
+
+.portrait{
+    border-radius: 50%;
+    width: 275px;
+    height: 275px;
+    box-shadow: rgba(14, 30, 37, 0.20) 0px 2px 4px 0px, rgba(14, 30, 37, 0.7) 0px 2px 16px 0px;
+}
+
+.dwrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: -30px;
+}
+
+.description{
+    font-size: 10pt;
+    border-radius: 4%;
+    width: 250px;
+    /* height: 63px; */
+    background-color: rgb(211, 211, 211);
+    padding: 25px;
+}
+
+#contact{
+    display: flex;
+    height: 180px;
+    background-color: black;
+    margin-top: 50px;
+    color: white;
+    justify-content: space-evenly;
+    font-size: 13pt;
+}
+
+.ftext{
+    margin-top: 40px;
+}
+
+img{
+    width:100%;
+    border-radius: 50%;
+}
+
+.centerarrow{
+    display: flex;
+    justify-content: center;
+}
+
+.fas.fa-arrow-alt-circle-down{
+    color: white;
+    font-size: 20px;
+}
+
+.fas.fa-arrow-alt-circle-up{
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.fas.fa-quote-right{
+    font-size: 15pt;
+    margin-right: 5px;
+}
+
+
+
+
+

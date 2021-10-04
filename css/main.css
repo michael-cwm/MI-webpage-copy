@@ -1,7 +1,108 @@
-
 html{
     scroll-behavior: smooth;
 }
+
+.p-menu1{
+    height: 100%;
+    width: 100%;
+ }
+
+.wrapper{
+    display: flex;
+    justify-content: end;
+}
+
+ .hamburger1 {
+   height: 45px;
+   padding: -10px;
+   display: -ms-grid;
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+   justify-items: center;
+   z-index: 120;
+   position: absolute;
+   left: 85%;
+   margin-top: 10px;
+ }
+ 
+ .hamburger1 div {
+   background-color: rgb(255, 255, 255);
+   position: relative;
+   width: 40px;
+   height: 5px;
+   margin-top: 7px;
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+ }
+ 
+ #toggle1 {
+   display: none;
+ }
+ 
+ #toggle1:checked + .hamburger1 .top {
+   -webkit-transform: rotate(-45deg);
+           transform: rotate(-45deg);
+   margin-top: 22.5px;
+ }
+ 
+ #toggle1:checked + .hamburger1 .meat {
+   -webkit-transform: rotate(45deg);
+           transform: rotate(45deg);
+   margin-top: -5px;
+ }
+ 
+ #toggle1:checked + .hamburger1 .bottom {
+   -webkit-transform: scale(0);
+           transform: scale(0);
+ }
+ 
+ #toggle1:checked ~ .menu1 {
+   height: 340px;
+ }
+
+ .menu1 {
+   width: 100%;
+   background-color: rgba(192, 192, 192, 0.150);
+   margin: 0;
+   display: -ms-grid;
+   display: grid;
+   grid-template-rows: 1fr repeat(4, 0.5fr);
+   grid-row-gap: 25px;
+   padding: 0;
+   list-style: none;
+   clear: both;
+   width: auto;
+   text-align: center;
+   height: 0px;
+   overflow: hidden;
+   transition: height .4s ease;
+   z-index: 120;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ .menu1 a:first-child {
+   margin-top: 60px;
+ }
+ 
+ .menu1 a:last-child {
+   margin-bottom: 0px;
+ } 
+ 
+ .link1 {
+   width: 100%;
+   margin: 0;
+   padding: 10px 0;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ .link1:hover {
+   background-color: rgba(255, 255, 255, 0.349);
+   color: rgb(61, 61, 61);
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+ }
 
 a{
     color: white;
@@ -10,7 +111,7 @@ a{
 
 i{
     margin-right: 10px;
-}
+}s
 
 a:hover{
     text-decoration: underline;
@@ -31,12 +132,12 @@ body{
     height: 80px;
     width: 100%;
     background-color: rgba(192, 192, 192, 0.308);
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
     color: white;
     gap: 50px;
-    font-size: 20pt;
+    font-size: 17pt;
 }
 
 .mainwrapper{
@@ -75,16 +176,20 @@ h3{
 .meet{
     height: 50px;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .row{
     height: 60vh;
+    width: 100%;
+    margin-bottom: 80px;
 }
 
 .namewrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    margin-bottom: -40px;
 }
 
 .namn{
@@ -94,11 +199,12 @@ h3{
     margin-bottom: -80px;
     font-weight:bold;
     font-size: 11pt;
+    margin: 0 auto;
 }
 
 .pwrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 80%;
 }
@@ -112,27 +218,25 @@ h3{
 
 .dwrapper{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: -30px;
+    justify-content: center;
 }
 
 .description{
     font-size: 10pt;
     border-radius: 4%;
     width: 250px;
-    /* height: 63px; */
     background-color: rgb(211, 211, 211);
     padding: 25px;
 }
 
 #contact{
-    display: flex;
-    height: 180px;
     background-color: black;
-    margin-top: 50px;
     color: white;
-    justify-content: space-evenly;
-    font-size: 13pt;
+    padding-left: 100px;
+    padding-top: 30px;
+    height: 70vh;
+    font-size: 16pt;
+    margin-top: 1250px;
 }
 
 .ftext{
@@ -157,7 +261,7 @@ img{
 .fas.fa-arrow-alt-circle-up{
     color: black;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .fas.fa-quote-right{
@@ -165,7 +269,41 @@ img{
     margin-right: 5px;
 }
 
+@media only screen and (min-width: 700px) {
 
+.huvudmeny{
+height: 80px; 
+width: 100%;
+background-color: rgba(192, 192, 192, 0.150);
+display: flex;
+justify-content: flex-end;
+align-items: center;
+color: white;
+gap: 40px;
+font-size: 16pt;
+}
 
+.p-menu1{
+    display: none;
+}
 
+.row{
+    width: 50%;
+    float: left;
+}
 
+#contact{
+    height: 200px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -100px;
+    padding-bottom: 40px;
+}
+
+#about{
+    width: 80%;
+    margin: 0 auto;
+}
+
+}
